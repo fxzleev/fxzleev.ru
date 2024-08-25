@@ -1,0 +1,139 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import 'gradient_button.css';
+@import 'google_search.css';
+@import 'vars.css';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--heder-height);
+}
+
+body {
+	background: #091b28;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: 'Open Sans', sans-serif;
+    color: #05cbba;
+}
+
+.wrap {
+  position:fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: var(--heder-height);
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-template-rows: 100px;
+    background: #09161f;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+    box-shadow: 0 3px 4px rgba(0,0,0,.15);
+}
+
+main {
+    overflow-y:auto;
+    flex-grow: 1;
+    padding-top: var(--heder-height);
+}
+
+
+footer {
+    background: #09161f;
+    width: 100%;
+    height: var(--heder-height);
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    box-shadow: 0px -3px 4px rgba(0,0,0,.15);
+}
+
+footer > .copy > p {
+    font-size: 13px;
+}
+
+.logo {
+    padding: 0;
+    margin: 0;
+    width: 100px;
+    height: 100px;
+}
+
+.logo_cont {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo_cont > span {
+    color: #05cbba;
+	font-size: 48px;
+	font-family: 'Comfortaa', cursive;
+}
+
+.copy {
+    margin-top: 80px;
+    padding-left: 15px;
+}
+
+.social_cont {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    place-items: center;
+    justify-content: end;
+    
+}
+
+.social_cont > p {
+    grid-column: span 2;
+}
+
+.social_cont > p > a {
+    color: #05cbba;
+}
+
+.social_cont > p > a:hover {
+    color: #078266;
+    text-decoration:  none;
+}
+
+.social {
+    max-width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.social > img {
+    width: 35px;
+    transition: 0.3s;;
+}
+
+.social > img:hover {
+    width: 50px;
+}
+
+.about {
+    display: grid;
+    justify-content: center;
+    margin-top: 150px;
+}
+.about_art {
+    width: 600px;
+    text-align: center;
+}
