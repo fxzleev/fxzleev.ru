@@ -2,15 +2,10 @@
 	color: #05cbba;
 	font-size: 48px;
 	font-family: 'Comfortaa', cursive;
-	font-weight: 300;
-	box-sizing: border-box;
+	font-weight: bold;
 	display: block;
-	margin-block-start: 0.67em;
-	margin-block-end: 0.67em;
-	margin-inline-start: 0px;
-	margin-inline-end: 0px;
-	unicode-bidi: isolate;
 	text-align: center;
+	padding: 50px 0;
 }
 .gradient-button {
 	text-decoration: none;
